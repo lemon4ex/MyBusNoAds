@@ -21,6 +21,8 @@
 %end
 %hook GDTSplashAd
 - (void)loadAd {}
+- (_Bool)isAdValid { return NO; }
+- (void)loadAdAndShowFullScreenInWindow:(id)arg1 withLogoImage:(id)arg2 skipView:(id)arg3 {}
 %end
 %hook HomeViewController
 - (void)loadAd {}
