@@ -1,0 +1,9 @@
+Package: com.byteage.MyBusNoAds
+Name: MyBusNoAds
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: 掌上公交去除启动屏和应用内广告。
+Maintainer: h4ck1n <luanpao2014@gmail.com>
+Author: h4ck1n <luanpao2014@gmail.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
