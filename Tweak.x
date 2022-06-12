@@ -1,6 +1,19 @@
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define XLOG(log, ...)	NSLog(@"[MyBusNoAds] " log, ##__VA_ARGS__)
+
+@interface SplashViewController : UIViewController
+- (void)toMain;
+- (void)stopTimer;
+@end
+
+%hook SplashViewController
+- (void)tick {
+	[self stopTimer];
+    [self toMain];
+}
+%end
 
 %hook GDTUnifiedNativeAdMediator
 - (void)loadAd {}
